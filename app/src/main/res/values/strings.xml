@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">MovieApp</string>
+    <string name="network_error">Please connect to network and try again later.</string>
+    <string name="common_error">Some error occurred, please try again later.</string>
+    <string name="hint_search_movie">Search Movie</string>
+    <string name="search_not_found">Sorry! Searched movie not found</string>
+    <string name="enter_title">Please enter movie name</string>
+
+    <string name="movie_title">Title</string>
+    <string name="movie_release">Released</string>
+    <string name="movie_genre">Genre</string>
+    <string name="movie_director">Director</string>
+    <string name="movie_writer">Writer</string>
+    <string name="movie_actors">Actors</string>
+    <string name="movie_plot">Plot</string>
+    <string name="movie_imdb">IMDB Rating</string>
+</resources>

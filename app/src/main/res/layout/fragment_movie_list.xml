@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white">
+
+    <EditText
+        android:id="@+id/edit_text_movie_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/dimen_16_dp"
+        android:hint="@string/hint_search_movie"
+        android:imeOptions="actionSearch"
+        android:inputType="text"
+        android:maxLength="100"
+        android:paddingLeft="@dimen/dimen_8_dp"
+        android:paddingRight="@dimen/dimen_8_dp"
+        android:textSize="@dimen/text_14_sp"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/movie_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/edit_text_movie_name"
+        android:background="@color/white"
+        android:clipToPadding="false"
+        android:overScrollMode="never"
+        android:padding="@dimen/dimen_4_dp"
+        android:paddingTop="@dimen/dimen_4_dp"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recent_search_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/edit_text_movie_name"
+        android:background="@color/white"
+        android:overScrollMode="never"
+        android:padding="@dimen/dimen_4_dp"
+        android:paddingTop="@dimen/dimen_4_dp"/>
+
+    <ProgressBar
+        android:id="@+id/progress_view"
+        style="?android:attr/progressBarStyleInverse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/snack_bar_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary"
+        android:gravity="bottom"
+        android:paddingBottom="@dimen/dimen_8_dp"
+        android:paddingTop="@dimen/dimen_8_dp"
+        android:textColor="@color/white"
+        android:visibility="gone"/>
+
+</RelativeLayout>
